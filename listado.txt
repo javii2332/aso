@@ -1,0 +1,298 @@
+total 1536
+drwxr-xr-x  3 root root     4096 de maig  19  2023 acpi
+-rw-r--r--  1 root root     3028 de febr. 23  2023 adduser.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 alsa
+drwxr-xr-x  2 root root    12288 de juny   6 11:59 alternatives
+-rw-r--r--  1 root root      335 de març  23  2022 anacrontab
+drwxr-xr-x  4 root root     4096 de maig  23  2023 apache2
+drwxr-xr-x  5 root root     4096 de maig  19  2023 apm
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:52 apparmor
+drwxr-xr-x 10 root root     4096 d’abr.   30 11:56 apparmor.d
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:56 apport
+drwxr-xr-x  8 root root     4096 de juny  23  2023 apt
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:56 avahi
+-rw-r--r--  1 root root     2319 de gen.   6  2022 bash.bashrc
+-rw-r--r--  1 root root       45 de nov.  11  2021 bash_completion
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:56 bash_completion.d
+-rw-r--r--  1 root root      367 de des.  16  2020 bindresvport.blacklist
+drwxr-xr-x  2 root root     4096 de maig  19  2023 binfmt.d
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:54 bluetooth
+-rw-r--r--  1 root root     7374 de des.   7  2021 bogofilter.cf
+-rw-r-----  1 root root       33 de febr. 23  2023 brlapi.key
+drwxr-xr-x  7 root root     4096 de maig  19  2023 brltty
+-rw-r--r--  1 root root    29219 de juny  28  2022 brltty.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 ca-certificates
+-rw-r--r--  1 root root     6253 d’abr.   12 12:54 ca-certificates.conf
+-rw-r--r--  1 root root     5532 de febr. 23  2023 ca-certificates.conf.dpkg-old
+-rw-r--r--  1 root root      119 de gen.  11  2022 catdocrc
+drwxr-s---  2 root dip      4096 de maig  19  2023 chatscripts
+-rw-------  1 root root       41 de juny  18 10:12 cifs-credentials
+-rw-------  1 root root       43 de juny  18 10:12 cifs-credentials-profes
+drwxr-xr-x  2 root root     4096 de maig  30  2023 cifs-utils
+drwx------  3 root root     4096 de maig  23  2023 cni
+drwxr-xr-x  2 root root     4096 de maig  19  2023 compizconfig
+drwxr-xr-x  2 root root     4096 de maig  19  2023 console-setup
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cracklib
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cron.d
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:54 cron.daily
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cron.hourly
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cron.monthly
+-rw-r--r--  1 root root     1136 de març  23  2022 crontab
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cron.weekly
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:56 cryptsetup-initramfs
+drwxr-xr-x  5 root lp       4096 de set.  16 08:04 cups
+drwxr-xr-x  2 root root     4096 de maig  19  2023 cupshelpers
+drwxr-xr-x  4 root root     4096 de maig  19  2023 dbus-1
+drwxr-xr-x  3 root root     4096 de maig  19  2023 dconf
+-rw-r--r--  1 root root     2969 de febr. 20  2022 debconf.conf
+-rw-r--r--  1 root root       13 d’ag.    22  2021 debian_version
+drwxr-xr-x  3 root root     4096 de maig  29 11:23 default
+-rw-r--r--  1 root root      604 de set.  16  2018 deluser.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 depmod.d
+drwxr-xr-x  4 root root     4096 de maig  19  2023 dhcp
+drwxr-xr-x  2 root root     4096 de maig  19  2023 dictionaries-common
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:57 dkms
+drwxr-xr-x  2 root root     4096 de maig  23  2023 dnsmasq.d
+drwxr-xr-x  2 root root     4096 d’abr.   16 12:11 dnsmasq.d-available
+drwxr-xr-x  2 root root     4096 de juny   5 11:35 docker
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:56 dpkg
+-rw-r--r--  1 root root      685 de gen.   8  2022 e2scrub.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 emacs
+-rw-r--r--  1 root root      123 de maig  23  2023 environment
+drwxr-xr-x  2 root root     4096 de maig  19  2023 environment.d
+-rw-r--r--  1 root root     1816 de des.  27  2019 ethertypes
+-rw-r--r--  1 root root      389 d’oct.   20  2022 exports
+drwxr-xr-x  3 root root     4096 de maig  23  2023 firebird
+drwxr-xr-x  4 root root     4096 de maig  19  2023 firefox
+drwxr-xr-x  4 root root     4096 de maig  19  2023 fonts
+-rw-r--r--  1 root root      713 de jul.   2 10:29 fstab
+-rw-r--r--  1 root root      694 de març  23  2022 fuse.conf
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:56 fwupd
+-rw-r--r--  1 root root     2584 de febr.  3  2022 gai.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 gamin
+drwxr-xr-x  3 root root     4096 de maig  19  2023 gdb
+drwxr-xr-x  2 root root     4096 de maig  19  2023 geoclue
+drwxr-xr-x  4 root root     4096 de maig  19  2023 ghostscript
+drwxr-xr-x  3 root root     4096 de maig  19  2023 gimp
+drwxr-xr-x  3 root root     4096 de maig  19  2023 glvnd
+drwxr-xr-x  2 root root     4096 de maig  19  2023 gnome
+drwxr-xr-x  2 root root     4096 de maig  19  2023 gnome-system-tools
+drwxr-xr-x  2 root root     4096 de maig  19  2023 groff
+-rw-r--r--  1 root root     2386 de set.  11 15:16 group
+-rw-r--r--  1 root root     2376 de set.  11 15:16 group-
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:56 grub.d
+-rw-r-----  1 root shadow   2159 de set.  11 15:16 gshadow
+-rw-r-----  1 root shadow   2149 de set.  11 15:16 gshadow-
+drwxr-xr-x  3 root root     4096 de maig  19  2023 gss
+drwxr-xr-x  2 root root     4096 de maig  19  2023 gtk-2.0
+drwxr-xr-x  2 root root     4096 de maig  19  2023 gtk-3.0
+drwxr-xr-x  2 root root     4096 de maig  19  2023 guest-session
+drwxr-xr-x  3 root root     4096 de maig  19  2023 gufw
+-rw-r--r--  1 root root     4436 de des.  15  2020 hdparm.conf
+-rw-r--r--  1 root root       92 d’oct.   15  2021 host.conf
+-rw-r--r--  1 root root        4 de febr. 23  2023 hostid
+-rw-r--r--  1 root root        7 de jul.   2 13:19 hostname
+-rw-r--r--  1 root root      279 de juny  30  2023 hosts
+-rw-r--r--  1 root root      411 de febr. 23  2023 hosts.allow
+-rw-r--r--  1 root root      711 de febr. 23  2023 hosts.deny
+drwxr-xr-x  2 root root     4096 de maig  19  2023 hp
+-rw-r--r--  1 root root      171 d’oct.   20  2022 idmapd.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 ifplugd
+drwxr-xr-x  2 root root     4096 de maig  19  2023 ImageMagick-6
+drwxr-xr-x  2 root root     4096 de maig  23  2023 init
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:56 init.d
+drwxr-xr-x  5 root root     4096 d’abr.   12 12:55 initramfs-tools
+-rw-r--r--  1 root root     1748 de gen.   6  2022 inputrc
+drwxr-xr-x  2 root root     4096 de maig  23  2023 insserv.conf.d
+-rw-r--r--  1 root root       71 de febr.  9  2017 inxi.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 ipp-usb
+drwxr-xr-x  4 root root     4096 de maig  19  2023 iproute2
+-rw-r--r--  1 root root       26 de febr. 14  2024 issue
+-rw-r--r--  1 root root       19 de febr. 14  2024 issue.net
+drwxr-xr-x  5 root root     4096 d’abr.   12 12:56 java-11-openjdk
+drwxr-xr-x  8 root root     4096 de maig  23  2023 kernel
+-rw-r--r--  1 root root      110 de maig  19  2023 kernel-img.conf
+-rw-r--r--  1 root root     1308 de març  24  2022 kerneloops.conf
+drwxr-xr-x  2 root root     4096 de febr. 28  2022 keyutils
+-rw-r--r--  1 root root      913 d’abr.   23 14:00 krb5.conf
+-rw-r--r--  1 root root      585 d’abr.   23 13:57 krb5.conf.bac
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:52 ldap
+-rw-r--r--  1 root root   104319 de juny  14 12:31 ld.so.cache
+-rw-r--r--  1 root root       34 de des.  16  2020 ld.so.conf
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:54 ld.so.conf.d
+-rw-r--r--  1 root root      267 d’oct.   15  2021 legal
+-rw-r--r--  1 root root       27 de març  13  2022 libao.conf
+-rw-r--r--  1 root root      191 de març  17  2022 libaudit.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 libblockdev
+-rw-r--r--  1 root root      371 de març  17  2022 libguestfs-tools.conf
+drwxr-xr-x  2 root root     4096 de maig  23  2023 libibverbs.d
+drwxr-xr-x  2 root root     4096 de maig  19  2023 libnl-3
+drwxr-xr-x  2 root root     4096 de maig  19  2023 libpaper.d
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:58 libreoffice
+drwxr-xr-x  6 root root     4096 d’abr.   16 12:11 libvirt
+drwxr-xr-x  3 root root     4096 de maig  26  2023 lightdm
+drwxr-xr-x  4 root root     4096 de maig  23  2023 lighttpd
+-rw-r--r--  1 root root     2996 de març   4  2022 locale.alias
+-rw-r--r--  1 root root     9454 d’abr.   19 09:55 locale.gen
+lrwxrwxrwx  1 root root       33 d’abr.   12 12:52 localtime -> /usr/share/zoneinfo/Europe/Madrid
+drwxr-xr-x  5 root root     4096 de maig  23  2023 logcheck
+-rw-r--r--  1 root root    10734 de nov.  11  2021 login.defs
+-rw-r--r--  1 root root      592 de gen.  24  2022 logrotate.conf
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:56 logrotate.d
+-rw-r--r--  1 root root      104 de febr. 14  2024 lsb-release
+drwxr-xr-x  3 root root     4096 de maig  23  2023 lvm
+-r--r--r--  1 root root       33 de jul.   2 12:39 machine-id
+-rw-r--r--  1 root root      111 de març  24  2022 magic
+-rw-r--r--  1 root root      111 de març  24  2022 magic.mime
+-rw-r--r--  1 root root    81988 de juny   7 12:43 mailcap
+-rw-r--r--  1 root root      449 de des.  11  2021 mailcap.order
+-rw-r--r--  1 root root     5217 de març  17  2022 manpath.config
+drwxr-xr-x  3 root root     4096 de maig  19  2023 mate-settings-daemon
+drwxr-xr-x  2 root root     4096 de maig  23  2023 mdadm
+drwxr-xr-x  2 root root     4096 de jul.   1  2021 mdevctl.d
+-rw-r--r--  1 root root    72029 de març  21  2022 mime.types
+drwxr-xr-x  2 root root     4096 de juny  15  2021 minicom
+-rw-r--r--  1 root root      744 de gen.   8  2022 mke2fs.conf
+drwxr-xr-x  4 root root     4096 de maig  19  2023 ModemManager
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:57 modprobe.d
+-rw-r--r--  1 root root      195 de febr. 23  2023 modules
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:38 modules-load.d
+drwxr-xr-x  2 root root     4096 de maig  19  2023 mpv
+lrwxrwxrwx  1 root root       19 de maig  19  2023 mtab -> ../proc/self/mounts
+-rw-r--r--  1 root root      624 de jul.  23  2021 mtools.conf
+drwxr-xr-x  3 root root     4096 de maig  19  2023 mysql
+-rw-r--r--  1 root root    11204 de febr.  9  2022 nanorc
+-rw-r--r--  1 root root      767 de març  24  2022 netconfig
+drwxr-xr-x  2 root root     4096 de maig  19  2023 netplan
+drwxr-xr-x  7 root root     4096 de maig  23  2023 network
+drwxr-xr-x  8 root root     4096 de maig  19  2023 networkd-dispatcher
+drwxr-xr-x  7 root root     4096 de maig  19  2023 NetworkManager
+-rw-r--r--  1 root root       91 d’oct.   15  2021 networks
+drwxr-xr-x  2 root root     4096 de maig  19  2023 newt
+-rw-r--r--  1 root root     1149 d’oct.   20  2022 nfs.conf
+drwxr-xr-x  2 root root     4096 d’oct.   20  2022 nfs.conf.d
+-rwxr-xr-x  1 root root      228 de març  23  2022 nftables.conf
+-rw-r--r--  1 root root      596 d’abr.   18 12:28 nsswitch.conf
+-rw-r--r--  1 root root      553 de maig  30  2023 nsswitch.conf.bac
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:56 ocsinventory
+drwxr-xr-x  2 root root     4096 de febr. 22  2022 ODBCDataSources
+-rw-r--r--  1 root root        0 de febr. 22  2022 odbc.ini
+-rw-r--r--  1 root root        0 de maig  19  2023 odbcinst.ini
+drwxr-xr-x  2 root root     4096 de maig  19  2023 openal
+drwxr-xr-x  2 root root     4096 de maig  19  2023 openni2
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:48 openvpn
+drwxr-xr-x  2 root root     4096 de maig  19  2023 opt
+lrwxrwxrwx  1 root root       21 de febr. 14  2024 os-release -> ../usr/lib/os-release
+drwxr-xr-x  2 root root     4096 de maig  19  2023 PackageKit
+-rw-r--r--  1 root root      552 d’ag.    12  2020 pam.conf
+drwxr-xr-x  2 root root     4096 de juny  10 10:24 pam.d
+-rw-r--r--  1 root root        3 de maig  19  2023 papersize
+-rw-r--r--  1 root root     3331 de maig  26  2023 passwd
+-rw-r--r--  1 root root     3375 de maig  26  2023 passwd-
+drwxr-xr-x  2 root root     4096 de maig  19  2023 pcmcia
+drwxr-xr-x  4 root root     4096 de maig  19  2023 perl
+drwxr-xr-x  4 root root     4096 de maig  19  2023 pki
+drwxr-xr-x  3 root root     4096 de maig  19  2023 pm
+-rw-r--r--  1 root root     7649 de febr. 23  2023 pnm2ppa.conf
+drwxr-xr-x  4 root root     4096 de maig  19  2023 polkit-1
+drwxr-xr-x  8 root dip      4096 de maig  19  2023 ppp
+-rw-r--r--  1 root root       10 de febr. 23  2023 prime-discrete
+lrwxrwxrwx  1 root root       18 d’abr.   12 12:57 printcap -> /run/cups/printcap
+-rw-r--r--  1 root root      624 de maig  30  2023 profile
+drwxr-xr-x  2 root root     4096 de maig  29 10:03 profile.d
+-rw-r--r--  1 root root     2932 d’abr.    1  2013 protocols
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:56 pulse
+drwxr-xr-x  2 root root     4096 de juny   7 12:43 python2.7
+drwxr-xr-x  2 root root     4096 de maig  19  2023 python3
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:52 python3.10
+-rwxr-xr-x  1 root root      163 de març  23  2023 qemu-ifdown
+-rwxr-xr-x  1 root root     1148 de març  23  2023 qemu-ifup
+-rw-r--r--  1 root root      220 de març  25  2022 quotagrpadmins
+-rw-r--r--  1 root root      526 de febr.  9  2021 quotatab
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc0.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc1.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc2.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc3.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc4.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc5.d
+drwxr-xr-x  2 root root     4096 d’abr.   18 10:23 rc6.d
+drwxr-xr-x  2 root root     4096 de maig  23  2023 rcS.d
+-rw-r--r--  1 root root     1889 de febr. 28  2022 request-key.conf
+drwxr-xr-x  2 root root     4096 de maig  30  2023 request-key.d
+lrwxrwxrwx  1 root root       39 de maig  19  2023 resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+lrwxrwxrwx  1 root root       13 de des.   5  2023 rmt -> /usr/sbin/rmt
+-rw-r--r--  1 root root      887 d’abr.    1  2013 rpc
+-rw-r--r--  1 root root     1382 de des.  24  2021 rsyslog.conf
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:53 rsyslog.d
+drwxr-xr-x  3 root root     4096 de maig   7 13:28 samba
+drwxr-xr-x  3 root root     4096 de maig  19  2023 sane.d
+drwxr-xr-x  2 root root     4096 d’abr.   16 12:11 sasl2
+-rw-r--r--  1 root root     3663 de juny  20  2016 screenrc
+drwxr-xr-x  4 root root     4096 de juny  18 10:13 security
+drwxr-xr-x  3 root root     4096 de maig  30  2023 selinux
+-rw-r--r--  1 root root    10593 de març  31  2022 sensors3.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 sensors.d
+-rw-r--r--  1 root root    12813 de març  27  2021 services
+drwxr-xr-x  3 root root     4096 de maig  19  2023 sgml
+-rw-r-----  1 root shadow   1882 de maig  26  2023 shadow
+-rw-r-----  1 root shadow   1981 de maig  26  2023 shadow-
+-rw-r--r--  1 root root      144 de maig  19  2023 shells
+drwxr-xr-x  3 root root     4096 de maig  19  2023 signon-ui
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:38 skel
+-rw-r--r--  1 root root     1201 de des.   2  2018 smi.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 snmp
+drwxr-xr-x  3 root root     4096 de maig  19  2023 sound
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:56 speech-dispatcher
+drwxr-xr-x  4 root root     4096 d’abr.   19 09:56 ssh
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:53 ssl
+drwx--x--x  3 root root     4096 de juny  18 13:13 sssd
+-rw-r--r--  1 root root       68 de maig  26  2023 subgid
+-rw-r--r--  1 root root       87 de maig  26  2023 subgid-
+-rw-r--r--  1 root root       68 de maig  26  2023 subuid
+-rw-r--r--  1 root root       87 de maig  26  2023 subuid-
+-rw-r--r--  1 root root     4573 de febr. 14  2022 sudo.conf
+-r--r-----  1 root root     1876 de maig  22 10:42 sudoers
+drwxr-xr-x  2 root root     4096 de maig  26  2023 sudoers.d
+-rw-r--r--  1 root root     9390 de febr. 14  2022 sudo_logsrvd.conf
+-rw-r--r--  1 root root      180 de nov.  16  2022 swtpm-localca.conf
+-rw-r--r--  1 root root       76 de nov.  16  2022 swtpm-localca.options
+-rw-r--r--  1 root root      215 de nov.  16  2022 swtpm_setup.conf
+-rw-r--r--  1 root root     2355 de febr. 25  2022 sysctl.conf
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:54 sysctl.d
+drwxr-xr-x  5 root root     4096 d’abr.   12 12:56 systemd
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:39 terminfo
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:54 thermald
+-rw-r--r--  1 root root       14 d’abr.   12 12:52 timezone
+drwxr-xr-x  2 root root     4096 de maig  19  2023 timidity
+-rw-r--r--  1 root root    18959 de març  11  2022 tlp.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 tlp.d
+drwxr-xr-x  2 root root     4096 de maig  19  2023 tmpfiles.d
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:56 ubuntu-advantage
+-rw-r--r--  1 root root     1260 de juny  16  2020 ucf.conf
+drwxr-xr-x  4 root root     4096 d’abr.   12 12:52 udev
+drwxr-xr-x  2 root root     4096 de maig  19  2023 udisks2
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:53 ufw
+drwxr-xr-x  3 root root     4096 d’abr.   12 12:56 update-manager
+drwxr-xr-x  2 root root     4096 d’abr.   19 09:56 update-motd.d
+drwxr-xr-x  2 root root     4096 de maig  19  2023 update-notifier
+drwxr-xr-x  2 root root     4096 de maig  19  2023 UPower
+-rw-r--r--  1 root root     1523 de març  25  2022 usb_modeswitch.conf
+drwxr-xr-x  2 root root     4096 de maig  19  2023 usb_modeswitch.d
+-rw-r--r--  1 root root       51 d’abr.    9  2020 vdpau_wrapper.cfg
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:53 vim
+drwxr-xr-x  3 root root     4096 de maig  23  2023 virt-builder
+drwxr-xr-x  2 root root     4096 de juny  20  2023 vmware
+lrwxrwxrwx  1 root root       23 de maig  19  2023 vtrgb -> /etc/alternatives/vtrgb
+drwxr-xr-x  5 root root     4096 de maig  19  2023 vulkan
+drwxr-xr-x  2 root root     4096 d’abr.   12 12:52 w3m
+-rw-r--r--  1 root root      314 de febr.  9  2021 warnquota.conf
+-rw-r--r--  1 root root     4942 de gen.  24  2022 wgetrc
+-rw-r--r--  1 root root       30 de set.  12 08:12 whoopsie
+drwxr-xr-x  2 root root     4096 de maig  23  2023 wireshark
+drwxr-xr-x  2 root root     4096 de maig  19  2023 wpa_supplicant
+drwxr-xr-x 12 root root     4096 de maig  19  2023 X11
+-rw-r--r--  1 root root      681 de març  23  2022 xattr.conf
+drwxr-xr-x  7 root root     4096 de maig  19  2023 xdg
+drwxr-xr-x  2 root root     4096 de maig  19  2023 xml
+drwxr-xr-x  2 root root     4096 de maig  19  2023 xrdb
+-rw-r--r--  1 root root      460 de des.   8  2021 zsh_command_not_found
