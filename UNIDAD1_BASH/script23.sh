@@ -15,7 +15,12 @@ if [[ -f $i ]]; then
 	echo "$i ES UN ARCHIVO "
 elif [[ -d $i ]]; then
 	echo " $i ES UN DIRECTORIO"
-else echo "EL CONTENIDO NO CORRESPONDE CON ARCHIVOS NI DIRECTORIOS"
+elif [[ -h $i ]]; then
+	echo " $i ES UN ENLACE SIMBÓLICO"
+elif [[ -b $i ]]; then
+	echo " $i ES UN ARCHIVO ESPECIAL DE BLOQUE"
+elif [[ -c $i ]]; then
+	echo " $i ES UN ARCHIVO ESPECIAL DE CARÁCTER"
 	fi
 	((contador++))
 done

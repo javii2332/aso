@@ -1,25 +1,23 @@
 #!/bin/bash
 
 	if [[ $# -ne 1 ]]; then
-	echo ""
+	echo "SE REQUIERE UN NÚMERO COMO ARGUMENTO"
 	exit 1
 	elif [[ $1 -le 0 ]]; then
-	echo "EL NÚMERO QUE HA INTRODUCIDO NO ES PRIMO"
+	echo "EL NÚMERO QUE HA INTRODUCIDO NO ES VÁLIDO"
 	exit 1
 	fi
 
-#i le damos el valor 1 y le sumamos 1 hasta llegar al número introducido en parámetros.
-	for ((i=1; i<=$1; i++)); do
-		operacion=$(( $1 % 1 ))
-		echo "$operacion" | grep ^0 >> SOLOLOSCEROS.txt #indicamos que redirija solamente los restos iguales a 0.
-	done
-
-	resultado=$(cat SOLOLOSCEROS.txt | wc -l)
-
-	if [[ $resultado -eq 2 ]]; then
-	echo "EL NÚMERO QUE SE HA INTRODUCIDO ES PRIMO"
-	else
-	echo "EL NÚMERO QUE SE HA INTRODUCIDO NO ES PRIMO"
+	if [[ $1 -eq 1 ]]; then
+	echo "EL NUMERO 1 NO ES PRIMO"
+	exit 1
 	fi
 
-	rm SOLOLOSCEROS.txt
+	for ((i=2; i<$1; i++)); do
+		if [[ $(( $1 % i )) -eq 0 ]]; then
+			echo "El número 1 no es primo"
+			exit 0
+		fi
+	done
+
+echo "El número $1 es primo"

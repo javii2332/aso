@@ -10,15 +10,23 @@ elif [[ ! -d $directorio ]]; then
 		exit 1
 fi
 contador=0
+contador2=0
+contador3=0
 for i in "$directorio"/*; do
 if [[ -f $i ]]; then
 	echo "$i ES UN ARCHIVO "
+	((contador++))
 elif [[ -d $i ]]; then
 	echo " $i ES UN DIRECTORIO"
+	((contador2++))
 else echo "EL CONTENIDO NO CORRESPONDE CON ARCHIVOS NI DIRECTORIOS"
+	((contador3++))
 	fi
-	((contador++))
 done
 
 echo ""
-echo "NUMERO TOTAL DE ENTRADAS PROCESADAS: $contador "
+echo "NUMERO TOTAL DE ARCHIVOS: $contador "
+echo ""
+echo "NUMERO TOTAL DE DIRECTORIOS: $contador2"
+echo ""
+echo "NUMERO TOTAL DE OTROS: $contador3"
