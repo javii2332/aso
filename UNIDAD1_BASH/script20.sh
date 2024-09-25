@@ -1,22 +1,25 @@
 #!/bin/bash
 
-read -p "PORFAVOR INTRODUZCA EL NÚMERO QUE DESEA COMPROBAR: " numero
-
-if [[ $numero -le 1 ]]; then
+	if [[ $# -ne 1 ]]; then
+	echo ""
+	exit 1
+	elif [[ $1 -le 0 ]]; then
 	echo "EL NÚMERO QUE HA INTRODUCIDO NO ES PRIMO"
-exit
-fi
+	exit 1
+	fi
 
-primo=1
-	for (( i=2; i*i<numero; i++ )); do
-		if (( numero % i == 0 )); then
-	primo=0
-	break
-fi
-done
+#i le damos el valor 1 y le sumamos 1 hasta llegar al número introducido en parámetros.
+	for ((i=1; i<=$1; i++)); do
+		operacion=$(( $1 % 1 ))
+		echo "$operacion" | grep ^0 >> SOLOLOSCEROS.txt #indicamos que redirija solamente los restos iguales a 0.
+	done
 
-if [[ primo == 1 ]]; then
-	echo "EL NUMERO $numero ES PRIMO"
-else
-	echo "EL NUMERO $numero NO ES PRIMO"
-fi
+	resultado=$(cat SOLOLOSCEROS.txt | wc -l)
+
+	if [[ $resultado -eq 2 ]]; then
+	echo "EL NÚMERO QUE SE HA INTRODUCIDO ES PRIMO"
+	else
+	echo "EL NÚMERO QUE SE HA INTRODUCIDO NO ES PRIMO"
+	fi
+
+	rm SOLOLOSCEROS.txt
