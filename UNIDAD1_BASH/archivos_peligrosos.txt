@@ -1,0 +1,2 @@
+/home/javlluapa/prueba
+/home/javlluapa/Documents/aso/UNIDAD1_BASH/prueba
