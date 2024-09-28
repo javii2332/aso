@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function extraccion_info_red() {
+
+	interfaz=$(ip route | grep default | awk 'print $)
+	ip_equipo=$()
+	mascara=$()
+	broadcast=$()
+	nombre_red=$()
+	tipo_red=$()
+}

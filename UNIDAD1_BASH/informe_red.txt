@@ -1,0 +1,112 @@
+Generando informe de IPs en la red...
+Interfaz activa: enp0s3
+Dirección IP: 192.168.1.102
+Máscara de subred: 24
+Broadcast: ff:ff:ff:ff:ff:ff
+192.168.1.255
+
+ está LIBRE
+Generando informe de IPs en la red...
+Interfaz activa: enp0s3
+Dirección IP: 192.168.1.102
+Máscara de subred: 24
+Broadcast: ff:ff:ff:ff:ff:ff
+192.168.1.255
+ está LIBRE
+Generando informe de IPs en la red...
+Interfaz activa: enp0s3
+Dirección IP: 192.168.1.102
+Máscara de subred: 24
+Broadcast: ff:ff:ff:ff:ff:ff
+192.168.1.255
+ está LIBRE
+Generando informe de IPs en la red...
+Interfaz activa: enp0s3
+Dirección IP: 192.168.1.102
+Máscara de subred: 24
+Broadcast: ff:ff:ff:ff:ff:ff
+192.168.1.255
+ está LIBRE
+192.168.1.1 está OCUPADA
+192.168.1.2 está LIBRE
+192.168.1.3 está LIBRE
+192.168.1.4 está LIBRE
+192.168.1.5 está LIBRE
+192.168.1.6 está LIBRE
+192.168.1.7 está LIBRE
+192.168.1.8 está LIBRE
+192.168.1.9 está LIBRE
+192.168.1.10 está LIBRE
+192.168.1.11 está LIBRE
+192.168.1.12 está LIBRE
+192.168.1.13 está LIBRE
+192.168.1.14 está LIBRE
+192.168.1.15 está LIBRE
+192.168.1.16 está LIBRE
+192.168.1.17 está LIBRE
+192.168.1.18 está LIBRE
+192.168.1.19 está LIBRE
+192.168.1.20 está LIBRE
+192.168.1.21 está LIBRE
+192.168.1.22 está LIBRE
+192.168.1.23 está LIBRE
+192.168.1.24 está LIBRE
+192.168.1.25 está LIBRE
+192.168.1.26 está LIBRE
+192.168.1.27 está LIBRE
+192.168.1.28 está LIBRE
+192.168.1.29 está LIBRE
+192.168.1.30 está LIBRE
+192.168.1.31 está LIBRE
+192.168.1.32 está LIBRE
+192.168.1.33 está LIBRE
+192.168.1.34 está LIBRE
+192.168.1.35 está LIBRE
+192.168.1.36 está LIBRE
+192.168.1.37 está LIBRE
+192.168.1.38 está OCUPADA
+192.168.1.39 está LIBRE
+192.168.1.40 está LIBRE
+192.168.1.41 está LIBRE
+192.168.1.42 está LIBRE
+192.168.1.43 está LIBRE
+192.168.1.44 está LIBRE
+192.168.1.45 está LIBRE
+192.168.1.46 está LIBRE
+192.168.1.47 está LIBRE
+192.168.1.48 está LIBRE
+192.168.1.49 está LIBRE
+192.168.1.50 está LIBRE
+Generando informe de IPs en la red...
+Interfaz activa: enp0s3
+Dirección IP: 192.168.1.102
+Máscara de subred: 24
+Broadcast: ff:ff:ff:ff:ff:ff
+192.168.1.255
+TODAS LAS DIRECCIONES LIBRES Y OCUPADAS INFORME
+192.168.1.1 está OCUPADA
+192.168.1.2 está LIBRE
+192.168.1.3 está LIBRE
+192.168.1.4 está LIBRE
+192.168.1.5 está LIBRE
+192.168.1.6 está LIBRE
+192.168.1.7 está LIBRE
+192.168.1.8 está LIBRE
+192.168.1.9 está LIBRE
+192.168.1.10 está LIBRE
+192.168.1.11 está LIBRE
+192.168.1.12 está LIBRE
+192.168.1.13 está LIBRE
+192.168.1.14 está LIBRE
+192.168.1.15 está LIBRE
+192.168.1.16 está LIBRE
+192.168.1.17 está LIBRE
+192.168.1.18 está LIBRE
+192.168.1.19 está LIBRE
+192.168.1.20 está LIBRE
+192.168.1.21 está LIBRE
+192.168.1.22 está LIBRE
+192.168.1.23 está LIBRE
+192.168.1.24 está LIBRE
+192.168.1.25 está LIBRE
+192.168.1.26 está LIBRE
