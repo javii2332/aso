@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Comprobamos que se han pasado los argumentos correctos
-if [ "$#" -lt 3 ] && [ "$#" -gt 4 ]; then
+if [ "$#" -lt 4 ] && [ "$#" -gt 5 ]; then
     echo "Error. La sintaxis correcta es ./gestionusuarios.sh alta/baja nombre apellido1 apellido2 [grupo]"
     exit 1
 fi
@@ -10,7 +10,7 @@ accion=$1
 nombre=$2
 apellido1=$3
 apellido2=$4
-grupo=${5:-""} # Si no se pasa grupo, se deja vacío
+grupo=$5
 
 # Función para generar el identificador
 generar_identificador() {
@@ -33,7 +33,7 @@ useradd -m -g "$grupo" "$id_usuario"
 echo "Usuario $id_usuario creado y agregado al grupo $grupo."
 
 # Acción de baja
-elif [ "$accion" == "baja" ]; then
+if [ "$accion" == "baja" ]; then
 id_usuario=$(generar_identificador)
 
 # Se elimina el usuario
@@ -43,4 +43,6 @@ echo "Usuario $id_usuario eliminado."
 else
 echo "Error. La sintaxis correcta es ./gestionusuarios.sh alta/baja nombre apellido1 apellido2 [grupo]"
 exit 1
+fi
+
 

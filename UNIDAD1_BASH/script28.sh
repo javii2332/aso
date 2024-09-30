@@ -28,7 +28,7 @@ ping_ip() {
 }
 
 generar_informe() {
-    local ip_prefix="${ip%.*}"
+    local ip_prefix="${ip%.*}"0
     local mascara_bin=$(( 32 - mascara ))
     local start_ip="$ip_prefix.1"
     local end_ip="$ip_prefix.254"
@@ -41,3 +41,5 @@ echo "Generando informe de IPs en la red..." >> "$fichero"
 info_red
 echo "TODAS LAS DIRECCIONES LIBRES Y OCUPADAS INFORME" >> "$fichero"
 generar_informe
+
+cat "$fichero"
