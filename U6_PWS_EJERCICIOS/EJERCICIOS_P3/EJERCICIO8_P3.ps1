@@ -1,0 +1,7 @@
+﻿#GRUPO A MUJ CON NOMBRE A-M Y HOMBRES CON NOMBRE N-Z
+#GRUPO B MUJ CON NOMBRE N-Z Y HOMBRES CON NOMMBRE A-M
+
+$n = Read-Host "ESCRIBE TU NOMBRE"
+$g = Read-Host "A QUE GENERO PERTENECE [W-M]"
+
+If ( $n -ge "A" -and -le "M" -and $g  
