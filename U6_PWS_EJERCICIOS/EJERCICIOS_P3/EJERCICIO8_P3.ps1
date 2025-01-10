@@ -1,7 +1,22 @@
-﻿#GRUPO A MUJ CON NOMBRE A-M Y HOMBRES CON NOMBRE N-Z
-#GRUPO B MUJ CON NOMBRE N-Z Y HOMBRES CON NOMMBRE A-M
+# Solicitar al usuario su nombre y sexo
+$nombre = Read-Host "Introduce tu nombre"
+$sexo = Read-Host "Introduce tu sexo (Hombre/Mujer)"
 
-$n = Read-Host "ESCRIBE TU NOMBRE"
-$g = Read-Host "A QUE GENERO PERTENECE [W-M]"
+# Obtener la primera letra del nombre
+$primerCaracter = $nombre[0]
 
-If ( $n -ge "A" -and -le "M" -and $g  
+# Verificar si el usuario es Mujer con nombre anterior a la M
+if ($sexo -eq "Mujer" -and $primerCaracter -lt "M") {
+    $grupo = "A"
+}
+# Verificar si el usuario es Hombre con nombre posterior a la N
+elseif ($sexo -eq "Hombre" -and $primerCaracter -gt "N") {
+    $grupo = "A"
+}
+# En cualquier otro caso el grupo será B
+else {
+    $grupo = "B"
+}
+
+# Mostrar el resultado
+Write-Host "Te corresponde el grupo: $grupo"
