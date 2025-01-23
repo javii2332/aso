@@ -1,0 +1,64 @@
+﻿$departamentos = import-CSV C:\Users\Administrador\Desktop\departamentos.csv -Delimiter ";"
+$usuarios = import-CSV C:\Users\Administrador\Desktop\empleados.csv -Delimiter ";"
+
+# CREACIÓN DE EMPRESA
+New-Item -Path "C:\Empresa2" -ItemType Directory
+
+# CREACIÓN DEL RECURSO COMPARTIDO EMPRESA
+New-SmbShare -Path C:\Empresa2 -Name Empresa2
+
+# DAR PERMISOS DE ACCESO PARA TODOS, ADMINS Y USUARIOS DEL DOMINIO
+Grant-SmbShareAccess -Name Empresa2 -AccountName 'Usuarios del dominio' -AccessRight Change -Force
+Grant-SmbShareAccess -Name Empresa2 -AccountName Administradores -AccessRight Full -Force
+
+# PERMISOS NTFS PARA USUARIOS PUEDAN LEER PERO NO MODIFICAR
+$acl = Get-Acl -Path C:\Empresa2
+$acl.SetAccessRuleProtection($true, $false)
+
+# Permisos para Usuarios del dominio (Lectura y Ejecución)
+$permisoAdd = @('Usuarios del dominio', 'ReadAndExecute', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
+$aceTodos = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permisoAdd
+$acl.SetAccessRule($aceTodos)
+
+# Permisos para Administradores (Control Total)
+$adminsAdd = @('Administradores', 'FullControl', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
+$aceAdmins = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $adminsAdd
+$acl.SetAccessRule($aceAdmins)
+
+# Aplicar ACL Modificada a la Carpeta Raíz
+$acl | Set-Acl -Path C:\Empresa2
+
+
+# COMPROBAR QUE SE HA REALIZADO CORRECTAMENTE
+(Get-Acl -Path "C:\Empresa2").AreAccessRulesProtected
+icacls "C:\Empresa2"
+
+# CREACIÓN DE LAS CARPETAS PARA CADA DEPARTAMENTO
+foreach ($dep in $departamentos) {
+    # Crear carpeta del departamento
+    $rutaDep = "C:\Empresa2\$($dep.departamento)"
+    New-Item -Name "$($dep.departamento)" -Path "C:\Empresa2\" -ItemType Directory -Force
+
+    # Obtener ACL actual de la carpeta
+    $aclDep = Get-Acl -Path $rutaDep
+    $aclDep.SetAccessRuleProtection($true, $false)
+
+    # Permisos para Administradores (Control Total)
+    $aceAdmins = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $adminsAdd
+    $aclDep.SetAccessRule($aceAdmins)
+
+    # Permisos para Grupo del Departamento (Modificar)
+    $gruposAdd = @("GR-$($dep.departamento)", 'Modify', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
+    $aceGrupo = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $gruposAdd
+    $aclDep.SetAccessRule($aceGrupo)
+
+    # Permisos para Usuarios (Pueden leer pero no modificar)
+    $aceUsers = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permisoAdd
+    $aclDep.SetAccessRule($aceUsers)
+
+
+    # Aplicar ACL Modificada a la Carpeta del Departamento
+    $aclDep | Set-Acl -Path $rutaDep
+}
+
+Write-Host "TODAS LAS CARPETAS HAN SIDO CREADAS Y SE HAN ASIGNADO LOS PERMISOS CORRECTAMENTE"
