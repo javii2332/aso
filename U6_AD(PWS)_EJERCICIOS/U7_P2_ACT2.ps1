@@ -7,15 +7,16 @@ New-Item -Path "C:\Empresa2" -ItemType Directory
 # CREACIÓN DEL RECURSO COMPARTIDO EMPRESA
 New-SmbShare -Path C:\Empresa2 -Name Empresa2
 
-# DAR PERMISOS DE ACCESO PARA TODOS 
-Grant-SmbShareAccess -Name Empresa2 -AccountName Todos -AccessRight Full -Force 
+# DAR PERMISOS DE ACCESO PARA TODOS, ADMINS Y USUARIOS DEL DOMINIO
+Grant-SmbShareAccess -Name Empresa2 -AccountName 'Usuarios del dominio' -AccessRight Change -Force
+Grant-SmbShareAccess -Name Empresa2 -AccountName Administradores -AccessRight Full -Force
 
 # PERMISOS NTFS PARA USUARIOS PUEDAN LEER PERO NO MODIFICAR
 $acl = Get-Acl -Path C:\Empresa2
-$acl.SetAccessRuleProtection($true, $true)
+$acl.SetAccessRuleProtection($true, $false)
 
-# Permisos para Todos (Lectura)
-$permisoAdd = @('Todos', 'Read', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
+# Permisos para Usuarios del dominio (Lectura y Ejecución)
+$permisoAdd = @('Usuarios del dominio', 'ReadAndExecute', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
 $aceTodos = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permisoAdd
 $acl.SetAccessRule($aceTodos)
 
@@ -27,7 +28,6 @@ $acl.SetAccessRule($aceAdmins)
 # Aplicar ACL Modificada a la Carpeta Raíz
 $acl | Set-Acl -Path C:\Empresa2
 
-Write-Host "LA HERENCIA HA SIDO DESACTIVADA Y SE HAN ESTABLECIDO PERMISOS EN EMPRESA2"
 
 # COMPROBAR QUE SE HA REALIZADO CORRECTAMENTE
 (Get-Acl -Path "C:\Empresa2").AreAccessRulesProtected
@@ -52,28 +52,13 @@ foreach ($dep in $departamentos) {
     $aceGrupo = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $gruposAdd
     $aclDep.SetAccessRule($aceGrupo)
 
+    # Permisos para Administradores (Control Total)
+    $aceUsers = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permisoAdd
+    $aclDep.SetAccessRule($aceUsers)
+
+
     # Aplicar ACL Modificada a la Carpeta del Departamento
     $aclDep | Set-Acl -Path $rutaDep
 }
 
 Write-Host "TODAS LAS CARPETAS HAN SIDO CREADAS Y SE HAN ASIGNADO LOS PERMISOS CORRECTAMENTE"
-
-
-
-
-#ELIMINAR SI HACE FALTA
-Remove-Item -Path "C:\Empresa2" 
-
-Remove-SmbShare -Name Empresa2 -Force
-
-$acl = Get-Acl -Path C:\Empresa2
-$deletePerm = @('Todos', 'FullControl', 'ContainerInherit,ObjectInherit', 'None', 'Allow')
-$aceDelete = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $deletePerm
-$acl.SetAccessRule($aceDelete)
-$acl | Set-Acl -Path C:\Empresa2
-
-
-takeown /f "C:\Empresa" /r /d y
-icacls "C:\Empresa" /grant Administradores:F /t
-
-Remove-Item -Path "C:\Empresa2" -Recurse -Force
