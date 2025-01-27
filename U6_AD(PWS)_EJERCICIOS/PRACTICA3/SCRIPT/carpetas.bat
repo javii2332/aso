@@ -1,0 +1,1 @@
+powershell New-SmbMapping -LocalPath 'Y:' -RemotePath '\\JAVI-ASO\Empresa2'
