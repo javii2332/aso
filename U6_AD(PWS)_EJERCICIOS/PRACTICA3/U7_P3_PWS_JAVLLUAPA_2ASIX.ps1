@@ -5,11 +5,11 @@ $usuarios = import-CSV C:\Users\Administrador\Desktop\empleados.csv -Delimiter "
 New-Item -Path "C:\Empresa_users" -ItemType Directory
 
 # CREACIÓN DEL RECURSO COMPARTIDO EMPRESA
-New-SmbShare -Path C:\Empresa_users -Name Empresa_users
+New-SmbShare -Path C:\Empresa_users -Name Empresa_users$
 
 # DAR PERMISOS DE ACCESO PARA TODOS, ADMINS Y USUARIOS DEL DOMINIO
-Grant-SmbShareAccess -Name Empresa_users -AccountName 'Usuarios del dominio' -AccessRight Change -Force
-Grant-SmbShareAccess -Name Empresa_users -AccountName Administradores -AccessRight Full -Force
+Grant-SmbShareAccess -Name Empresa_users$ -AccountName 'Usuarios del dominio' -AccessRight Change -Force
+Grant-SmbShareAccess -Name Empresa_users$ -AccountName Administradores -AccessRight Full -Force
 
 # PERMISOS NTFS PARA USUARIOS PUEDAN LEER PERO NO MODIFICAR
 $acl = Get-Acl -Path C:\Empresa_users
@@ -32,7 +32,7 @@ $acl | Set-Acl -Path C:\Empresa_users
 # CREACIÓN DE LAS CARPETAS PARA CADA USUARIO
 foreach ($usu in $usuarios) {
     # Crear carpeta del departamento
-    $rutaDep = "C:\Empresa_users\$($usu.nombre).$($usu.apellido)$"
+    $rutaDep = "C:\Empresa_users\$($usu.nombre).$($usu.apellido)"
     
     # Crear la carpeta del departamento si no existe
     if (-not (Test-Path $rutaDep)) {
@@ -60,4 +60,8 @@ foreach ($usu in $usuarios) {
     # Aplicar ACL Modificada a la Carpeta del Departamento
     $aclDep | Set-Acl -Path $rutaDep
 
+    #ASIGNAR UNIDAD Z AL USUARIO 
+    Set-ADUser -Identity "$($usu.nombre)" -ScriptPath "carpetas.bat" -HomeDrive "Z:" -HomeDirectory "\\JAVI-ASO\Empresa_users$\$($usu.nombre).$($usu.apellido)"
+
 }
+
